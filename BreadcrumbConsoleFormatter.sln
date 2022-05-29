@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreadcrumbConsoleFormatter", "BreadcrumbConsoleFormatter\BreadcrumbConsoleFormatter.csproj", "{4BDE2061-6044-41EE-8866-F3E33697B22D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BreadcrumbConsoleFormatter.Sample", "BreadcrumbConsoleFormatter.Sample\BreadcrumbConsoleFormatter.Sample.csproj", "{3E20B51E-6892-4B2C-89F4-3DAB9EE87934}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4BDE2061-6044-41EE-8866-F3E33697B22D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BDE2061-6044-41EE-8866-F3E33697B22D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BDE2061-6044-41EE-8866-F3E33697B22D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BDE2061-6044-41EE-8866-F3E33697B22D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E20B51E-6892-4B2C-89F4-3DAB9EE87934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E20B51E-6892-4B2C-89F4-3DAB9EE87934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E20B51E-6892-4B2C-89F4-3DAB9EE87934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E20B51E-6892-4B2C-89F4-3DAB9EE87934}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6E589E64-86E7-4293-98EE-5CD1AA60C486}
+	EndGlobalSection
+EndGlobal
