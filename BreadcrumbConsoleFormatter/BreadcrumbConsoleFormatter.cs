@@ -19,7 +19,7 @@ namespace Util.Extensions.Logging
 
         public override void Write<TState>(
             in LogEntry<TState> logEntry,
-            IExternalScopeProvider scopeProvider,
+            IExternalScopeProvider? scopeProvider,
             TextWriter textWriter)
         {
             var dic = new Dictionary<string, string>(bcfo.StaticScope ?? empty)
@@ -33,7 +33,7 @@ namespace Util.Extensions.Logging
                 { "category"    , logEntry.Category },
                 { "msg"         , logEntry.Formatter!(logEntry.State, logEntry.Exception) },
             };
-            scopeProvider.ForEachScope((scope, state) =>
+            scopeProvider?.ForEachScope((scope, state) =>
             {
                 if (scope is not BreadcrumbScope bc) return;
                 foreach (var item in bc) dic[item.Key] = item.Value;
