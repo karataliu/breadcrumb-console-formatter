@@ -7,15 +7,10 @@ using Microsoft.Extensions.Options;
 
 namespace Util.Extensions.Logging
 {
-    public class BreadcrumbConsoleFormatter : ConsoleFormatter
+    public class BreadcrumbConsoleFormatter(IOptions<BreadcrumbConsoleFormatterOptions> jo) : ConsoleFormatter(nameof(BreadcrumbConsoleFormatter))
     {
-        private static readonly BreadcrumbScope empty = new();
-        private readonly BreadcrumbConsoleFormatterOptions bcfo;
-        public BreadcrumbConsoleFormatter(IOptions<BreadcrumbConsoleFormatterOptions> jo)
-            : base(nameof(BreadcrumbConsoleFormatter))
-        {
-            this.bcfo = jo.Value;
-        }
+        private static readonly BreadcrumbScope empty = [];
+        private readonly BreadcrumbConsoleFormatterOptions bcfo = jo.Value;
 
         public override void Write<TState>(
             in LogEntry<TState> logEntry,

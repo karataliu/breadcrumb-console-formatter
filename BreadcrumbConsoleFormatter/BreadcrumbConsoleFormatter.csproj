@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RootNamespace>Util.Extensions.Logging</RootNamespace>
@@ -9,8 +9,9 @@
 
   <PropertyGroup>
     <PackageId>Util.Extensions.Logging.BreadcrumbConsoleFormatter</PackageId>
+    <PackageProjectUrl>https://github.com/karataliu/breadcrumb-console-formatter</PackageProjectUrl>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>0.1.0</Version>
+    <Version>0.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

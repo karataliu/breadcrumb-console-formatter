@@ -2,7 +2,6 @@
 
 namespace Util.Extensions.Logging
 {
-
     public sealed class BreadcrumbConsoleFormatterOptions : ConsoleFormatterOptions
     {
         public BreadcrumbScope? StaticScope { get; set; }
