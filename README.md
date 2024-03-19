@@ -1,0 +1,1 @@
+[![NuGet](https://img.shields.io/nuget/v/Util.Extensions.Logging.BreadcrumbConsoleFormatter.svg)](https://www.nuget.org/packages/Util.Extensions.Logging.BreadcrumbConsoleFormatter)
